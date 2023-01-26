@@ -73,4 +73,59 @@ button {
     padding: 8px 16px;
 }
 
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.text_main_content{
+    font-size: 36px;
+    font-weight: bolder;
+    margin-top: 40px;
+}
+
+.image_container{
+    display: flex;
+    flex-wrap: wrap;
+    flex-grow: 1;
+    margin: 30px;
+
+
+}
+
+.image_text{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px;
+}
+
+.description{
+    max-width: 120px;
+    padding: 10px;
+    text-align: center;
+}
+
+.image_box {
+    display: flex;
+    border: #3882f6 solid 3px;
+    border-radius: 12px;
+    width: 120px;
+    height: 120px;
+
+}
+
+
+.quote_container{
+    padding: 60px 0;
+    background-color: #e5e7eb;
+}
+
+
+
+
+
+
+
 
