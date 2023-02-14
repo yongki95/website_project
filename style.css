@@ -8,7 +8,7 @@ body {
     height: 100vh;
 }
 
-header{
+header, footer{
     background-color: #1F2937;
     color: #f9faf8;
     min-width: 600px;
@@ -47,17 +47,20 @@ main{
     grid-template-columns: repeat(12,1fr);
     background-color: #1F2937;
     min-width: 600px;
+    grid-template-rows: 240px;
 
 }
 
 .left_main{
     grid-column: 3 / 7;
     color: #e5e7eb;
-}
+    display:flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    min-width: 300px;
+    overflow: none;
 
-.right_main{
-    background-color: bisque;
-    grid-column: 7 / 11;
 }
 
 .Hero_text{
@@ -68,72 +71,19 @@ main{
     font-size: 18px;
 }
 
-/* .header, .footer {
-    background-color: #1f2937;
-    color: #f9faf8;
-    display: flex;
-    flex-direction: column;
-    flex: 1;
-} */
-
-/* .top_header {
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-} */
-
-/* .logo_text_header {
-    font-size: 24px;
-} */
-
-/* .top_nav > ul {
-    list-style: none;
-    display: flex;
-    flex-direction: row;
-    gap: 12px;
-} */
-
-/* .content_header{
-    display: flex;
-    flex: 1;    
-    padding: 120px 0;
-    align-self:center;
-    justify-content: space-between;
-    flex-wrap: wrap;
-}
-
-
-.main_text_header{
-    font-size: 48px;
-    font-weight: bolder;
-
-}
-
-.left_content_header{
-    width: 50%;
-    margin-right: 20px;
-    overflow-wrap: break-word;
-    
-}
-
-.right_header{
-    align-self: stretch;
-    background-color: wheat;
-    width: 45%;
-    
-}
-
-.secondary_text_header {
-    margin:10px 0;
-    font-size: 18px;
-} */
-
 button {
     background-color: #3882f6;
     color: white;
     border: none;
     border-radius: 6px;
     padding: 8px 24px;
+    width: 120px;
+}
+
+.right_main{
+    background-color: bisque;
+    grid-column: 7 / 11;
+    min-width: 300px;
 }
 
 .container {
@@ -146,13 +96,17 @@ button {
     font-size: 36px;
     font-weight: bolder;
     margin-top: 40px;
+    min-width: 300px;
 }
+
 
 .image_container{
     display: flex;
     flex-wrap: wrap;
     flex-grow: 1;
     margin: 30px;
+    min-width: 680px;
+    overflow: none;
 
 
 }
@@ -185,9 +139,9 @@ button {
     background-color: #e5e7eb;
     flex-direction: column;
     align-items: center;
-    padding: 60px 480px;
-    flex-wrap: wrap;
+    padding: 60px;
     flex: 1;
+    min-width: 360px;
 }
 
 .quote {
@@ -206,13 +160,15 @@ button {
 
 .link_box {
     display: flex;
-    margin: 80px 360px;
+    margin: 80px auto;
+    width: 750px;
     justify-content:center;
     align-items: center;
     background-color: #3882f6;
     padding: 30px;
     border-radius: 12px;
     gap:12%;
+    min-width: 630px;
     
 }
 
@@ -230,8 +186,7 @@ button {
     font-weight: bolder;
 }
 
-.footer {
-    align-items: center;
-    padding: 30px;
+.text_footer {
+    text-align: center;
 }
 
