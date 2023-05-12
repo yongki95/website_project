@@ -1,9 +1,6 @@
 # Website_Project
 
 URL: https://yongki95.github.io/website_project/
-
-<img src="./first_website.png" alt="Sign up form picture">
-
 ### Used Skills
 
 1. HTML
